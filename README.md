@@ -16,4 +16,4 @@ Doc:
 Nosso banco possui duas tabelas. A tabela Imagens que possui todas as imagens usadas para fazer o jogo. Essa tabela possui as colunas:
 id, name, image_path, palavra_chave, dificuldade e categoria. A segunda tabela e a Pontuacao. Nela temos as colunas: id, name, pontos.
 
-
+OBS: Nos fizemos o projeto inteiro e depois postamos no git. Ambos participantes colaboraram igualmente nesse projeto.
