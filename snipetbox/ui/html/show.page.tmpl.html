@@ -1,0 +1,41 @@
+{{template "base" .}}
+{{define "title"}} Image {{.ID}} {{end}}
+
+{{define "body"}}
+  <div class="image">
+    <pre> <code> 
+      <img src={{.Image_path}}/>
+      </code> </pre>
+  </div>
+  <div>
+    <input id="input_text" type="text">
+    <input id="testando" type="text" value="{{.Palavra_chave}}" hidden>
+    <button id=buttonSubmit onclick="teste()">SUBMIT</button>
+  </div>
+
+<script>
+    var guesses = 0;
+    var pontos = 0;
+  function teste(){
+    var guess = document.getElementById("input_text").value;
+    var teste = document.getElementById("testando").value;
+    const total_chances = 3;
+    if (guess == teste){
+      pontos = 5 * (3 - guesses)
+      alert("acerto miseravi");
+      window.location.href = "/"
+    }
+    else{
+      guesses++;
+      if(guesses == total_chances){
+        alert("morreu");
+        window.location.href = "/"
+      }
+      else{
+        alert("erro");
+      }
+    }
+  }
+</script>
+
+{{end}}

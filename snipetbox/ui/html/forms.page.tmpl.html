@@ -1,0 +1,18 @@
+{{define "title"}} Forms {{end}}
+
+{{if .Success}}
+    <h1>Thanks for your message!</h1>
+{{else}}
+    <h1>Name</h1>
+    <form method="POST">
+        <label>Name:</label><br />
+        <input type="text" name="name"><br/>
+        <input type="submit" value="Submit name">
+    </form>
+  
+<script type="text/javascript">
+  function player() {
+    window.location.href = "/dificuldades"
+  }
+</script>
+{{end}}

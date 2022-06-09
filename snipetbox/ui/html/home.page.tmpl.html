@@ -1,0 +1,12 @@
+{{template "base" .}}
+{{define "title"}} Home {{end}}
+{{define "body"}}
+
+  <button id="buttonPlayer" onclick="player()"> JOGAR </button>
+
+  <script>
+    function player(){
+      window.location.href = "/dificuldades"
+    }
+  </script>
+{{end}}

@@ -1,0 +1,22 @@
+{{template "base" .}}
+{{define "title"}} LeaderBoard {{end}}
+{{define "body"}}
+  <h2>People:</h2>
+  {{if .}}
+    <table>
+      </tr>
+        <th> NAME </th>
+        <th> POINTS </th>
+      <tr>
+        {{range .}}
+      </tr>
+      <tr>
+          <td> {{.Name}}</td>
+          <td> {{.Pontos}}</td>
+        </tr>
+      {{end}}
+    </table>
+  {{else}}
+    <p>Nenhuma Pontuação válida no momento ...</p>
+  {{end}}
+{{end}}
