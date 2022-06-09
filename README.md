@@ -12,6 +12,9 @@ acertar o nome do filme.
 Link:
 https://drive.google.com/file/d/1Qit9pQ-J0KYZpo8BmmL88ThJ-VR6Os2-/view?usp=sharing
 
+Replit:
+https://replit.com/@PedroHenriqu227/trab#snipetbox/
+
 Doc:
 Nosso banco possui duas tabelas. A tabela Imagens que possui todas as imagens usadas para fazer o jogo. Essa tabela possui as colunas:
 id, name, image_path, palavra_chave, dificuldade e categoria. A segunda tabela e a Pontuacao. Nela temos as colunas: id, name, pontos.
